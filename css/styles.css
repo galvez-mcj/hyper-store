@@ -87,7 +87,7 @@ h1 {
     Setting the media for smaller screens
     to accomodate the burger menu
 */
-@media screen and (max-width: 820px){
+@media screen and (max-width: 840px){
     .burger-menu {
         display: block;
     }
@@ -412,3 +412,78 @@ footer {
 }
 
 
+/*
+    Media for sections
+*/
+
+@media screen and (max-width: 600px) {
+    .home-container {
+        width: 100%;
+    }
+
+    section#about {
+        background-image: url('../assets/about-img.jpg');
+        background-size: cover;
+    }
+
+    .about-container {
+        display: block;
+    }
+
+    .about-left {
+        display: none;
+    }
+
+    .about-right p {
+        text-shadow: 2px 2px 5px black;
+    }
+
+    section#products {
+        height: fit-content;
+    }
+
+    .products-container {
+        top: 0%;
+        -webkit-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+        margin-bottom: 10px;
+    }
+
+    .products-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .product-card img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .products-content, .product-card {
+        width: 100%;
+    }
+
+    section#contact {
+        height: fit-content;
+    }
+
+    .contact-container {
+        top: 0%;
+        -webkit-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+        padding: 10px;
+        display: block;
+    }
+
+    .contact-left, .contact-right {
+       margin-bottom: 10px;
+    }
+
+    
+}
